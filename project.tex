@@ -5,10 +5,18 @@
 
 % change default font family from serif to sans-serif
 \renewcommand{\familydefault}{\sfdefault}
+% change ToC, figure and table section titles to german equivalents
+\renewcommand{\contentsname}{Inhaltsverzeichnis}
+\renewcommand{\listfigurename}{Figuren- \& Abbildungsverzeichnis}
+\renewcommand{\listtablename}{Tabellenverzeichnis}
 
 \title{Projekttitel}
 \date{2019-03-05}
-\author{John Doe}
+\author{Projektdokumentation\\
+       \\
+       John Doe\\
+       Awesome Denki - SuperElektrik GmbH\\
+}
 
 \begin{document}
   \pagenumbering{gobble}
@@ -21,24 +29,29 @@
 
   \pagenumbering{arabic}
   \section{Definitionsphase}
+    \begin{abstract}
+    Short introduction to subject of the paper \ldots
+    \end{abstract}
     \subsection{Situationsanalyse}
     \subsection{Auftragsbeschreibung}
     \subsection{Problemdefinition}
-    \subsection{Arbeitgeberwuensche}
+    \subsection{Kundengespraech}
     \subsection{Ist-Analyse}
     \subsection{Soll-Konzept}
     \newpage
 
   \section{Planungsphase}
-    \subsection{Kostenplan}
-    \subsection{Zeitplan}
-    \subsection{Qualitaetssicherungsplan}
     \subsection{Projektstrukturplan}
+    \subsection{Zeitplan}
+    \subsection{Kostenplan}
+    \subsection{Qualitaetssicherungsplan}
     \newpage
 
   \section{Durchfuehrungsphase}
-    \subsection{Entwurf}
-    \subsection{Design}
+    \subsection{Use Cases}
+    \subsection{Domain Modelling}
+    \subsection{Datenbankentwurf}
+    \subsection{GUI-Entwurf}
     \newpage
 
   \section{Implementierungsphase}
@@ -46,32 +59,49 @@
       \subsubsection{Unit Tests}
       \subsubsection{Systemtests}
       \subsubsection{Bedienungstests}
+    \subsection{Quellcode}
     \subsection{Fachlicher Soll-Ist Vergleich}
     \subsection{Zeitlicher Soll-Ist Vergleich}
+    \subsection{Installation \& Konfiguration???}
     \newpage
 
-  \pagenumbering{gobble}
-  \begin{appendix}
-    \listoffigures
-    \listoftables
-  \end{appendix}
-  \newpage
+    \pagenumbering{gobble}
+    \begin{appendix}
+      \listoffigures
+      \listoftables
+    \end{appendix}
+    \newpage
 
-  \section{Anhang: Figuren}
+  \section{Anhang: Figuren \& Tabellen}
     \pagenumbering{Roman}
+    \subsection{Fragenkatalog zum Kundengespraech}
+      \newpage
     \subsection{Projektstrukturplan}
       \begin{figure}[h!]
         \includegraphics[width=\linewidth]{fig/Projektstrukturplan.pdf}
-        \caption{Der Projektstrukturplan}
+        \caption{Projektstrukturplan}
         \label{fig:psp}
       \end{figure}
+      \newpage
+    \subsection{Zeitplan}
+      \newpage
+    \subsection{Kostenplan}
+      \newpage
+    \subsection{Qualitaetssicherungsplan}
       \newpage
     \subsection{Use-Case Diagramm}
       \newpage
     \subsection{Klassendiagramm}
       \begin{figure}[h!]
         \includegraphics[width=\linewidth]{fig/UML_Classdiagram.pdf}
-        \caption{Das Klassendiagramm}
+        \caption{Klassendiagramm}
+        \label{fig:classdiagram}
+      \end{figure}
+      \newpage
+    \subsection{Entity Relationship Diagram, Datenbank}
+      \begin{figure}[h!]
+        \includegraphics[width=\linewidth]{fig/ERD_JeffersonMiddleSchool.pdf}
+        \caption{Entity Relationship Diagram, Datenbank}
         \label{fig:classdiagram}
       \end{figure}
       \newpage
