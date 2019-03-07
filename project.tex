@@ -1,16 +1,13 @@
 \documentclass[11pt, a4paper]{article}
 \usepackage[utf8]{inputenc}
-% \usepackage{helvet}
 \usepackage{graphicx}
 \usepackage{blindtext}
-
 \usepackage{booktabs} % For \toprule, \midrule and \bottomrule
 \usepackage{pgfplotstable} % Generates table from .csv
 
-% \usepackage{blindtext}
-
 % change default font family from serif to sans-serif
 \renewcommand{\familydefault}{\sfdefault}
+
 % change ToC, figure and table section titles to german equivalents
 \renewcommand{\contentsname}{Inhaltsverzeichnis}
 \renewcommand{\listfigurename}{Figuren- \& Abbildungsverzeichnis}
@@ -67,24 +64,27 @@
 
     \subsection{Projektstrukturplan}
       \begin{figure}[h!]
-        \includegraphics[width=\linewidth]{fig/Projektstrukturplan.pdf}
+        \makebox[\textwidth]{\includegraphics[width=1.4\linewidth]{fig/Projektstrukturplan.pdf}}
         \caption{Projektstrukturplan}
         \label{fig:psp}
       \end{figure}
       \newpage
 
     \subsection{Zeitplan}
+      \input{tables/zeitplan.tex}
       \newpage
 
     \subsection{Kostenplan}
+      \input{tables/kostenplan.tex}
       \newpage
 
     \subsection{Qualitaetssicherungsplan}
+      \input{tables/qualitaetssicherungsplan.tex}
       \newpage
 
     \subsection{Use-Case Diagramm}
       \begin{figure}[h!]
-        \includegraphics[width=\linewidth]{fig/use_case_diagram.pdf}
+        \makebox[\textwidth]{\includegraphics[width=1.2\linewidth]{fig/use_case_diagram.pdf}}
         \caption{Use Case Diagram}
         \label{fig:usecasediagram}
       \end{figure}
@@ -92,7 +92,7 @@
 
     \subsection{Klassendiagramm}
       \begin{figure}[h!]
-        \includegraphics[width=\linewidth]{fig/UML_Classdiagram.pdf}
+        \makebox[\textwidth]{\includegraphics[width=1.3\linewidth]{fig/UML_Classdiagram.pdf}}
         \caption{Klassendiagramm}
         \label{fig:classdiagram}
       \end{figure}
@@ -100,7 +100,7 @@
 
     \subsection{Entity Relationship Diagram, Datenbank}
       \begin{figure}[h!]
-        \includegraphics[width=\linewidth]{fig/ERD_JeffersonMiddleSchool.pdf}
+        \makebox[\textwidth]{\includegraphics[width=1.3\linewidth]{fig/ERD_JeffersonMiddleSchool.pdf}}
         \caption{Entity Relationship Diagram, Datenbank}
         \label{fig:classdiagram}
       \end{figure}
