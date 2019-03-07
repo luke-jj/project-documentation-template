@@ -2,6 +2,12 @@
 \usepackage[utf8]{inputenc}
 % \usepackage{helvet}
 \usepackage{graphicx}
+\usepackage{blindtext}
+
+\usepackage{booktabs} % For \toprule, \midrule and \bottomrule
+\usepackage{pgfplotstable} % Generates table from .csv
+
+% \usepackage{blindtext}
 
 % change default font family from serif to sans-serif
 \renewcommand{\familydefault}{\sfdefault}
@@ -26,43 +32,24 @@
   \tableofcontents
   \newpage
 
-
   \pagenumbering{arabic}
+  \begin{abstract}
+  Short introduction to subject of the paper \ldots
+  \end{abstract}
   \section{Definitionsphase}
-    \begin{abstract}
-    Short introduction to subject of the paper \ldots
-    \end{abstract}
-    \subsection{Situationsanalyse}
-    \subsection{Auftragsbeschreibung}
-    \subsection{Problemdefinition}
-    \subsection{Kundengespraech}
-    \subsection{Ist-Analyse}
-    \subsection{Soll-Konzept}
+    \input{content/ch01.tex}
     \newpage
 
   \section{Planungsphase}
-    \subsection{Projektstrukturplan}
-    \subsection{Zeitplan}
-    \subsection{Kostenplan}
-    \subsection{Qualitaetssicherungsplan}
+    \input{content/ch02.tex}
     \newpage
 
   \section{Durchfuehrungsphase}
-    \subsection{Use Cases}
-    \subsection{Domain Modelling}
-    \subsection{Datenbankentwurf}
-    \subsection{GUI-Entwurf}
+    \input{content/ch03.tex}
     \newpage
 
   \section{Implementierungsphase}
-    \subsection{Tests}
-      \subsubsection{Unit Tests}
-      \subsubsection{Systemtests}
-      \subsubsection{Bedienungstests}
-    \subsection{Quellcode}
-    \subsection{Fachlicher Soll-Ist Vergleich}
-    \subsection{Zeitlicher Soll-Ist Vergleich}
-    \subsection{Installation \& Konfiguration???}
+    \input{content/ch04.tex}
     \newpage
 
     \pagenumbering{gobble}
@@ -75,7 +62,9 @@
   \section{Anhang: Figuren \& Tabellen}
     \pagenumbering{Roman}
     \subsection{Fragenkatalog zum Kundengespraech}
+      \input{tables/fragenkatalog.tex}
       \newpage
+
     \subsection{Projektstrukturplan}
       \begin{figure}[h!]
         \includegraphics[width=\linewidth]{fig/Projektstrukturplan.pdf}
@@ -83,14 +72,24 @@
         \label{fig:psp}
       \end{figure}
       \newpage
+
     \subsection{Zeitplan}
       \newpage
+
     \subsection{Kostenplan}
       \newpage
+
     \subsection{Qualitaetssicherungsplan}
       \newpage
+
     \subsection{Use-Case Diagramm}
+      \begin{figure}[h!]
+        \includegraphics[width=\linewidth]{fig/use_case_diagram.pdf}
+        \caption{Use Case Diagram}
+        \label{fig:usecasediagram}
+      \end{figure}
       \newpage
+
     \subsection{Klassendiagramm}
       \begin{figure}[h!]
         \includegraphics[width=\linewidth]{fig/UML_Classdiagram.pdf}
@@ -98,6 +97,7 @@
         \label{fig:classdiagram}
       \end{figure}
       \newpage
+
     \subsection{Entity Relationship Diagram, Datenbank}
       \begin{figure}[h!]
         \includegraphics[width=\linewidth]{fig/ERD_JeffersonMiddleSchool.pdf}
