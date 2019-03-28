@@ -1,24 +1,24 @@
 Hauptprozess,Teilprozess,Stunden
-Definitionsphase, ,8
- ,Situationsanalyse, 2
+Definitionsphase, ,
+(8h) ,Situationsanalyse, 2
  ,Auftragsbeschreibung, 1
  ,Problemdefinition, 1
  ,Fragenkatalog erstellen, 1
  ,Kundengespraech, 1
  ,Ist-Analyse, 1
  ,Soll-Konzept, 1
-Planungsphase, ,4
- ,Projektstrukturplan erstellen, 1
+Planungsphase, ,
+(4h) ,Projektstrukturplan erstellen, 1
  ,Qualitaetssicherungsplan erstellen, 1
  ,Zeitplan erstellen, 1
  ,Kostenplan erstellen, 1
-Durchfuehrungsphase, ,12
- ,Use Cases erstellen, 4
+Durchfuehrungsphase, ,
+(12h) ,Use Cases erstellen, 4
  ,Use Case Diagramm erstellen, 2
  ,Domain Modelling durchfuehren, 2
  ,Class Diagramme erstellen, 4
-Implementierungsphase, ,46
- ,Unit Tests schreiben, 8
+Implementierungsphase, ,
+(46h) ,Unit Tests schreiben, 8
  ,Code schreiben, 32
  ,Systemtests durchfuehren, 2
  ,Soll-Ist Vergleich durchfuehren, 1
