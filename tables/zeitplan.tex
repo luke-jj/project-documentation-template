@@ -1,14 +1,15 @@
 \begin{table}[h!]
   \begin{center}
-    \caption{Zeitplan}
+    \caption{Terminplan}
     \label{table1}
     \pgfplotstabletypeset[
       multicolumn names, % allows to have multicolumn names
       col sep=comma, % the seperator in our .csv file
       header=has colnames,
-      columns={Fragen,Antworten},
-      columns/Fragen/.style={column type={c|},string type},
-      columns/Antworten/.style={column type={c|},string type},
+      columns={Hauptprozess,Teilprozess,Stunden},
+      columns/Hauptprozess/.style={column type={p{.3\textwidth}},string type},
+      columns/Teilprozess/.style={column type={p{.6\textwidth}},string type},
+      columns/Stunden/.style={column type={p{.1\textwidth}},string type},
       every head row/.style={
         before row={\toprule}, % have a rule at top
         after row={\midrule}
