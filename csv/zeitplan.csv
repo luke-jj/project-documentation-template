@@ -8,20 +8,23 @@ Definitionsphase, ,
  ,Ist-Analyse, 1
  ,Soll-Konzept, 1
 Planungsphase, ,
-(4h) ,Projektstrukturplan erstellen, 1
- ,Qualitaetssicherungsplan erstellen, 1
- ,Zeitplan erstellen, 1
+(12h) ,Projektstrukturplan erstellen, 1
+ ,Terminplan erstellen, 1
  ,Kostenplan erstellen, 1
-Durchfuehrungsphase, ,
-(12h) ,Use Cases erstellen, 4
+ ,Qualitaetssicherungsplan erstellen, 1
  ,Use Case Diagramm erstellen, 2
- ,Domain Modelling durchfuehren, 2
- ,Class Diagramme erstellen, 4
+ ,Klassendiagramme erstellen, 4
+ ,Datenbankmodel erstellen, 2
 Implementierungsphase, ,
-(46h) ,Unit Tests schreiben, 8
- ,Code schreiben, 32
- ,Systemtests durchfuehren, 2
- ,Soll-Ist Vergleich durchfuehren, 1
- ,Projektdokumentation fertigstellen, 2
+(40h) ,Unit Tests schreiben, 4
+ ,REST-API Code entwickeln, 8
+ ,Datenbank-Code entwickeln, 8
+ ,Web-Interface entwickeln, 8
+ ,Datenbank API und Interface integrieren, 8
+ ,Systemtests durchfuehren, 4
+Abschlussphase, ,
+(10h),Soll-Ist Vergleich durchfuehren, 1
+ ,Projektdokumentation fertigstellen, 7
  ,Projektuebergabe, 1
+ ,Fazit, 1
 Gesamtdauer, , 70
