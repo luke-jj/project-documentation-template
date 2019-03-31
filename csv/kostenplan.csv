@@ -1,6 +1,5 @@
-Fragen,Antworten
-Zu welchem Zeitpunkt muss der Projektantrag spaetestens uebergeben werden? sdfasdfasdfasdfasdfsa asdf asdf asdf asd fasd fasd f, 20.04.2019
-Frage 2, Antwort 2
-Frage 3, Antwort 3
-Frage 4, Antwort 4
-Frage 5, Antwort 5
+Kostenart, Menge, Preis in Euro, Gesamt in Euro
+Allgemeinkosten,1,,
+Anfahrtskosten,10x15km,0.30, 30.00
+Lohnkosten,70h,2.00,140.00
+Kosten Summe, , , 170.00
