@@ -1,5 +1,6 @@
 Kostenart, Menge, Preis in Euro, Gesamt in Euro
 Allgemeinkosten,1,,
-Anfahrtskosten,10x15km,0.30, 30.00
+Anfahrtskosten,10 * 15km,0.30, 30.00
 Lohnkosten,70h,2.00,140.00
+,,,
 Kosten Summe, , , 170.00

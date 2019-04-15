@@ -1,6 +1,15 @@
 Massnahme,Ziel
 Kundengespraechsdokumentation erstellt, Sicherung der Projektanforderungen und -erwartungen
+,
 Detaillierte Zeitplanung erstellt, Sicherstellung der Terminierung
+,
 Projektplanungsdokumente erstellt, Sicherstellung eines fehlerfreien Projektablaufs
-Tests durchfuehren, Sicherung gegen Softwarebugs
+,
+Unit Tests durchfuehren, Sicherung gegen Softwarebugs
+,
+Integrationstests durchfuehren, Kompatibilitaet aller Dependencies sicherstellen
+,
+Test Deployment durchfuehren, Kompatibilitaet mit externen Plattformen sicherstellen
+,
 Ruecksprachen mit dem Auftraggeber, Klaerung neu entstandener Fragen
+,

@@ -1,6 +1,9 @@
 Fragen,Antworten
-Zu welchem Zeitpunkt muss der Projektantrag spaetestens uebergeben werden?, Der Antrag muss spaetestens am 20.04.2019 abgegeben werden.
-Frage 2, Antwort 2
-Frage 3, Antwort 3
-Frage 4, Antwort 4
-Frage 5, Antwort 5
+Zu welchem Zeitpunkt muss der Projektantrag spaetestens uebergeben werden?, Der Antrag muss spaetestens am 04.04.2019 abgegeben werden.
+,
+Auf welchen Plattformen sollen die fertigen Produkte gehostet werden?, Die API soll auf Heroku gehostet werden und der Datenbankserver auf mlab.com.
+,
+Sollen neue User direkt nach der Registration authentifiziert sein?, Ja.
+,
+Sollen die Daten in JSON oder XML uebertragen werden?, Die Daten muessen in JSON uebertragen werden.
+,

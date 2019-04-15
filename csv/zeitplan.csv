@@ -13,18 +13,20 @@ Planungsphase, ,
  ,Kostenplan erstellen, 1
  ,Qualitaetssicherungsplan erstellen, 1
  ,Use Case Diagramm erstellen, 2
- ,Klassendiagramme erstellen, 4
+ ,API Strukturplan erstellen, 4
  ,Datenbankmodel erstellen, 2
 Implementierungsphase, ,
 (40h) ,Unit Tests schreiben, 4
  ,REST-API Code entwickeln, 8
  ,Datenbank-Code entwickeln, 8
- ,Web-Interface entwickeln, 8
- ,Datenbank API und Interface integrieren, 8
- ,Systemtests durchfuehren, 4
+ ,Datenbank und API Routen integrieren, 4
+ ,Logging und Error-Handling implementieren, 8
+ ,Integrationstests durchfuehren, 4
+ ,Deployment testen, 4
 Abschlussphase, ,
-(10h),Soll-Ist Vergleich durchfuehren, 1
- ,Projektdokumentation fertigstellen, 7
+(10h),Soll-Ist Vergleich durchfuehren, 2
+ ,Projektdokumentation fertigstellen, 6
  ,Projektuebergabe, 1
  ,Fazit, 1
+ ,,
 Gesamtdauer, , 70
