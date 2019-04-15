@@ -1,11 +1,34 @@
-\subsection{Tests}
-  \blindtext
-  \subsubsection{Unit Tests}
-  \subsubsection{Systemtests}
-  \subsubsection{Bedienungstests}
+In dieser Phase wurde zuerst das Grundgeruest eines JavaScript Node.js
+Webservers kodiert, der als Basis fuer die REST-API dient. Nachdem die
+grundsaetzliche Funktionalitaet sichergestellt wurde, wurden die vorgesehenen
+URI Resourcen in einzelnen Funktionen des Router-Controllers implementiert.
+Anschliessend wurde die Business-Logik, wie Authentifizierung und Authorisierung
+implementiert. Daraufhin folgend wurden die Datenmodelle in Code umgesetzt und
+abschliessend wurden alle vorgesehenen Tests durchgefuehrt.
+
 \subsection{REST-API}
   \blindtext
+
 \subsection{Datenbank}
   \blindtext
+
 \subsection{Web-Interface}
   \blindtext
+
+\subsection{Tests}
+Mit Unit-, Integrations-, und Deploymenttests wird die Wartbarkeit, Performance
+und Stabilitaet der Software gewaehrleistet.
+
+  \subsubsection{Unit Tests}
+Die Unittests werden mit JavaScript internen Funktionen realisiert und testen
+im speziellen die 'User' Datenmodelle und die Authentifizierung.
+
+  \subsubsection{Integrationstests}
+Der Integrationstest wurde mit einem Jenkins CI Server vollzogen und verief ohne
+Probleme.
+
+  \subsubsection{Deployment}
+Test Deployment auf Heroku und mlab.com verliefen ohne Probleme. Die Software
+war voll funktionsfaehig. Noetige Installations- und Starthinweise wurden der
+Softwaredokumentation, der README Datei, hinzugefuegt.
+
