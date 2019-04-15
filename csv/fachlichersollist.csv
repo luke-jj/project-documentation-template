@@ -1,0 +1,17 @@
+Ziel,Erreicht
+,
+Alle geforderten API Routen erstellt?,Ja
+,
+Authentifizierungsfeature implementiert?,Ja
+,
+Authorisationsfeature implementiert?,Ja
+,
+Configuration des Services ueber Umgebungsvariablem moeglich?, Ja
+,
+API Endpoint Dokumentation erstellt?,Ja
+,
+Softwaredokumentation erstellt?,Ja
+,
+Unittests erfolgreich?,Ja
+,
+Test Deployment erfolgreich?,Ja

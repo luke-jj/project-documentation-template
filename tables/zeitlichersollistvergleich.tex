@@ -1,0 +1,23 @@
+\begin{table}[h!]
+  \begin{center}
+    \caption{Zeitlicher Soll-Ist Vergleich}
+    \label{table1}
+    \pgfplotstabletypeset[
+      multicolumn names, % allows to have multicolumn names
+      col sep=comma, % the seperator in our .csv file
+      header=has colnames,
+      columns={Hauptprozess,Teilprozess,Plan,(h)},
+      columns/Hauptprozess/.style={column type={p{.3\textwidth}},string type},
+      columns/Teilprozess/.style={column type={p{.5\textwidth}},string type},
+      columns/Plan/.style={column type={p{.1\textwidth}},string type},
+      columns/(h)/.style={column type={p{.1\textwidth}},string type},
+      every head row/.style={
+        before row={\toprule}, % have a rule at top
+        after row={\midrule}
+      },
+      every last row/.style={
+        after row=\bottomrule % rule at bottom
+      }
+    ]{csv/zeitlichersollist.csv} % filename/path to file
+  \end{center}
+\end{table}

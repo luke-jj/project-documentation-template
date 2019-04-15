@@ -1,0 +1,32 @@
+Hauptprozess,Teilprozess,Plan,(h)
+Definitionsphase, ,geplant,gebraucht
+(8h) ,Situationsanalyse, 2, 2
+ ,Auftragsbeschreibung, 1, 1
+ ,Problemdefinition, 1, 1
+ ,Fragenkatalog erstellen, 1, 1
+ ,Kundengespraech, 1, 1
+ ,Ist-Analyse, 1, 1
+ ,Soll-Konzept, 1, 1
+Planungsphase, , ,
+(12h) ,Projektstrukturplan erstellen, 1, 1
+ ,Terminplan erstellen, 1, 1
+ ,Kostenplan erstellen, 1, 1
+ ,Qualitaetssicherungsplan erstellen, 1, 1
+ ,Use Case Diagramm erstellen, 2, 2
+ ,API Strukturplan erstellen, 4, 4
+ ,Datenbankmodel erstellen, 2, 2
+Implementierungsphase, , ,
+(40h) ,Unit Tests schreiben, 4, 2
+ ,REST-API Code entwickeln, 8, 16
+ ,Datenbank-Code entwickeln, 8, 8
+ ,Datenbank und API Routen integrieren, 4, 4
+ ,Logging und Error-Handling implementieren, 8, 6
+ ,Integrationstests durchfuehren, 4, 2
+ ,Deployment testen, 4, 2
+Abschlussphase, , ,
+(10h),Soll-Ist Vergleich durchfuehren, 2, 1
+ ,Projektdokumentation fertigstellen, 6, 8
+ ,Fazit, 1, 0.5
+ ,Projektuebergabe, 1, 0.5
+ ,,,
+Gesamtdauer, , 70, 70

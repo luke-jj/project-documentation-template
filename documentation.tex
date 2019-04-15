@@ -4,6 +4,7 @@
 \usepackage{blindtext}
 \usepackage{booktabs} % For \toprule, \midrule and \bottomrule
 \usepackage{pgfplotstable} % Generates table from .csv
+\usepackage{fancyhdr}
 
 % change default font family from serif to sans-serif
 \renewcommand{\familydefault}{\sfdefault}
@@ -12,6 +13,30 @@
 \renewcommand{\contentsname}{Inhaltsverzeichnis}
 \renewcommand{\listfigurename}{Figuren- \& Abbildungsverzeichnis}
 \renewcommand{\listtablename}{Tabellenverzeichnis}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{John Doe}
+\lhead{Projekttitel}  % \leftmark
+\chead{}
+\rfoot{}
+\lfoot{}
+\cfoot{}
+
+\newcommand{\frontmatter}{
+  \clearpage
+  \rfoot{}
+}
+
+\newcommand{\mainmatter}{
+  \clearpage
+  \rfoot{Seite \thepage\ von \pageref{LastPageOfFrontMatter}}
+}
+
+\newcommand{\backmatter}{
+  \clearpage
+  \rfoot{Seite \thepage\ von \pageref{LastPageOfBackMatter}}
+}
 
 \title{Projekttitel}
 \date{2019-03-05}
@@ -30,9 +55,7 @@
   \newpage
 
   \pagenumbering{arabic}
-  \begin{abstract}
-  Short introduction to subject of the paper \ldots
-  \end{abstract}
+  \mainmatter
   \section{Definitionsphase}
     \input{content/ch01.tex}
     \newpage
@@ -47,15 +70,18 @@
 
   \section{Abschlussphase}
     \input{content/ch04.tex}
+    \label{LastPageOfFrontMatter}~
     \newpage
 
-    \pagenumbering{gobble}
-    \begin{appendix}
-      \listoffigures
-      \listoftables
-    \end{appendix}
-    \newpage
+  \frontmatter
+  \pagenumbering{gobble}
+  \begin{appendix}
+    \listoffigures
+    \listoftables
+  \end{appendix}
+  \newpage
 
+  \backmatter
   \section{Anhang: Figuren \& Tabellen}
     \pagenumbering{Roman}
     \subsection{Fragenkatalog zum Kundengespraech}
@@ -104,6 +130,15 @@
         \caption{Entity Relationship Diagram, Datenbank}
         \label{fig:datadiagram}
       \end{figure}
+      \newpage
+
+    \subsection{Zeitlicher Soll-Ist Vergleich}
+      \input{tables/zeitlichersollistvergleich.tex}
+      \newpage
+
+    \subsection{Fachlicher Soll-Ist Vergleich}
+      \input{tables/fachlichersollistvergleich.tex}
+      \label{LastPageOfBackMatter}~
       \newpage
 
 \end{document}
